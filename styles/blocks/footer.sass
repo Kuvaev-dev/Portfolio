@@ -1,0 +1,53 @@
+// main: ../style.sass
+
+.footer
+    background-color: #332F30
+    padding: 1rem 0
+
+.footer__inner
+    display: flex
+    justify-content: space-between
+
+.footer__copyright
+    color: #BBBBCC
+    font-size: 0.94rem
+    align-items: center
+    border-right: 1px solid fade($gray, 35%)
+    padding-right: 0.8rem
+    margin-right: 1rem
+    margin-top: 1.3rem
+
+
+.footer__credits
+    display: flex
+
+.footer__social
+    display: flex
+    align-items: center
+    a
+        text-decoration: none
+        margin-right: 1.2rem
+        margin-bottom: 5px
+
+
+.footer__nav
+    display: flex
+    align-items: center
+    font-size: 0.94rem
+
+.footer__nav-link
+    margin-left: 1.5rem
+    color: #BBBBCC
+    text-decoration: none
+    line-height: 1.1
+    &:hover
+        text-decoration: underline
+    &--btn
+        padding: 1.4rem
+        border-radius: 20px
+        border: 1px solid $gray-light
+        &:hover
+            text-decoration: none
+            background-color: #BBBBCC
+            border-color: #BBBBCC
+            color: $black
