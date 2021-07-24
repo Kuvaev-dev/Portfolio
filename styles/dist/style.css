@@ -177,6 +177,10 @@
   border-width: 2px;
   min-width: 0;
 }
+.btn--thin {
+  min-width: 145px;
+  font-size: 0.8rem;
+}
 
 .buttom-btn {
   margin-left: 42.5%;
@@ -575,6 +579,111 @@
   color: #2b2a2c;
 }
 
+.timeline {
+  display: flex;
+  margin: 4.2rem auto;
+  width: 100%;
+  max-width: 768px;
+  position: relative;
+}
+.timeline:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #2b2a2c;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+}
+
+.timeline__col {
+  width: 50%;
+}
+.timeline__col--left {
+  text-align: right;
+  padding-right: 3.2rem;
+}
+.timeline__col--right {
+  padding-left: 3.2rem;
+}
+
+.timeline__title {
+  margin-bottom: 2.6rem;
+  font-size: 1.2rem;
+  color: #2b2a2c;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.timeline__item {
+  margin-bottom: 2.6rem;
+}
+.timeline__item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline__date {
+  display: block;
+  margin-bottom: 0.8rem;
+  text-decoration: underline;
+  font-size: 0.94rem;
+  color: #2b2a2c;
+}
+
+.timeline__subtitle {
+  margin-bottom: 0.2rem;
+  font-size: 1.06rem;
+  color: #2b2a2c;
+  font-weight: 700;
+}
+
+.timeline__position {
+  font-size: 0.94rem;
+  color: #2b2a2c;
+  font-style: italic;
+}
+
+.timeline__text {
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #6A6968;
+  font-weight: 300;
+}
+
+.progress-bar {
+  margin-bottom: 2.6rem;
+}
+
+.progress-bar__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.progress-bar__title {
+  font-size: 0.94rem;
+  font-weight: 300;
+}
+
+.progress-bar__right {
+  padding-left: 1.2rem;
+}
+
+.progress-bar__bar {
+  width: 139px;
+  height: 6px;
+  background-color: #EFEFEF;
+}
+
+.progress-bar__progress {
+  height: 100%;
+  background-color: #6A6968;
+  transition: width 0.2s linear;
+}
+
 .modal {
   display: flex;
   width: 100%;
@@ -610,6 +719,19 @@
 }
 .modal__close:hover {
   transform: translateY(-3px);
+}
+
+.modal__content {
+  padding: 5rem 1rem;
+}
+
+.modal__title {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  color: #2b2a2c;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .modal-work {
@@ -723,6 +845,10 @@
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.text-right {
+  text-align: right;
 }
 
 html {
