@@ -753,7 +753,7 @@
 }
 
 .modal {
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   padding: 1rem;
@@ -763,6 +763,9 @@
   top: 0;
   left: 0;
   z-index: 1000;
+}
+.modal.show {
+  display: flex;
 }
 
 .modal__dialog {
@@ -947,7 +950,7 @@ body {
   font-size: 1rem;
   color: #2b2a2c;
 }
-body:no-scroll {
+body.no-scroll {
   overflow: hidden;
 }
 
