@@ -933,6 +933,10 @@
   margin-bottom: 0;
 }
 
+.hide {
+  display: none;
+}
+
 html {
   font-size: 15px;
 }
