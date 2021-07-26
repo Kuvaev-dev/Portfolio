@@ -47,7 +47,18 @@
     &--thin
         min-width: 145px
         font-size: 0.8rem
-        
+
+    @media screen and (max-width: 991px)
+        font-size: 1rem
+        padding: 1.0em 1.5em
+        min-width: 140px
+
+    @media screen and (max-width: 565px)
+        display: block
+        width: 100%
+        + .btn 
+            margin-left: 0
+            margin-top: 1rem
 
 .buttom-btn
     margin-left: 42.5%

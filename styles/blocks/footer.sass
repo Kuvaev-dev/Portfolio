@@ -20,6 +20,13 @@
 
 .footer__credits
     display: flex
+    align-items: center
+    @media screen and (max-width: 991px)
+        width: 100%
+        justify-content: center
+        margin-bottom: 1rem
+    @media screen and (max-width: 565px)
+        flex-direction: column
 
 .footer__social
     display: flex

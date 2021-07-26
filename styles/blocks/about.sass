@@ -2,23 +2,29 @@
 
 .about 
     margin: 8.4rem 0
+    @media screen and (max-width: 991px)
+        margin: 4rem 0
 
 .about__inner 
     display: flex
+    flex-wrap: wrap
     max-width: 1090px
 
-.about__photo, .about__content 
+.about__photo,
+.about__content 
     width: 50%
+    @media screen and (max-width: 767px)
+        width: 100%
 
 .about__photo 
     position: relative
-
     img 
-        position: relative
+        position: absolute
+        bottom: 0
         z-index: 2
-    
     &:before 
         content: ""
+        display: block
         width: 413px
         height: 413px
         background-color: #EFEFEF
@@ -26,10 +32,29 @@
         left: 1rem
         bottom: 0
         z-index: 1
-    
+
+    @media screen and (max-width: 991px)
+        order: 2
+        &:before 
+            width: 100%
+            height: 300px
+            left: 0
+        img 
+            position: relative
+            margin: 0 auto
+
 .about__content 
     padding-left: 3.2rem
     margin-top: 2rem
+
+    @media screen and (max-width: 767px)
+        order: 1
+        margin-bottom: 2rem
+        padding-left: 0
+        text-align: center
+        max-width: 600px
+        margin-left: auto
+        margin-right: auto
 
 .about__title 
     font-size: 3rem
@@ -37,15 +62,30 @@
     font-weight: 700
     text-transform: uppercase
 
-.about__bigtitle 
+    @media screen and (max-width: 1199px)
+        font-size: 2.5rem
+
+    @media screen and (max-width: 767px)
+        font-size: 2rem
+
+.about__bigtitle
     margin-bottom: 1.4rem
     position: relative
     left: -10px
-    text-transform: uppercase
     font-size: 6.1rem
     line-height: 1.1
     color: fade($black, 15%)
     font-weight: 700
+    text-transform: uppercase
+
+    @media screen and (max-width: 1199px)
+        font-size: 4rem
+
+    @media screen and (max-width: 991px)
+        position: static
+
+    @media screen and (max-width: 767px)
+        font-size: 3rem
 
 .about__text 
     margin-bottom: 2.8rem
@@ -53,4 +93,3 @@
     line-height: 2
     color: $gray
     font-weight: 300
-
